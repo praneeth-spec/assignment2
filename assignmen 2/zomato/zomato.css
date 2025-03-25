@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.zomato-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.zomato-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: lowercase;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.search-container {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    height: 54px;
+    width: 100%;
+}
+
+.location-search, .restaurant-search {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    flex: 1;
+}
+
+.location-search {
+    border-right: 1px solid #e8e8e8;
+    max-width: 220px;
+    position: relative;
+}
+
+.location-selector {
+    border: none;
+    outline: none;
+    padding: 15px 10px 15px 5px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.location-search::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #9c9c9c;
+    position: absolute;
+    right: 15px;
+    pointer-events: none;
+}
+
+.restaurant-search {
+    flex: 2;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-container i {
+    color: #ff7e8b;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.divider {
+    width: 1px;
+    background-color: #e8e8e8;
+}
